@@ -33,24 +33,24 @@ class Weather:
         self.json = json
 
     def _get_formatted_c(self, k: float) -> str:
-        """Formats temperature expressed in kelvins to celcius.
+        """Formats temperature expressed in kelvins to celsius.
 
         Args:
             k: float, temperature in kelvins
 
         Returns:
-            string, formatted temperature in celcius
+            string, formatted temperature in celsius
         """
         return format(self._k_to_c(k), ".1f")
 
     @staticmethod
     def _k_to_c(k: float) -> float:
-        """Transform temperature expressed in kelvins to celcius
+        """Transform temperature expressed in kelvins to celsius
 
         Args:
             k: float, temperature in kelvins
 
         Returns:
-            float, temperature in celcius
+            float, temperature in celsius
         """
         return k - 273.15

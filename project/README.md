@@ -15,20 +15,20 @@ This step is nessecarry to use app.
 
 To check weather in Warsaw run:
 ```shell
-weather-app
+weather-check
 ```
 
 If you want to check weather in different city run for example:
 ```shell
-weather-app -c Krakow
+weather-check -c Krakow
 ```
 
 If you want to check weather in different city that's not in Poland run for example:
 ```shell
-weather-app -c "New York" --country US
+weather-check -c "New York" --country US
 ```
 
 For detailed help run"
 ```shell
-weather-app --help
+weather-check --help
 ```

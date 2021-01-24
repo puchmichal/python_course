@@ -1,3 +1,5 @@
+import os
+
 from .weather import Weather
 
 
@@ -10,14 +12,14 @@ class WeatherFormatter:
 
     def format(self) -> str:
         """Returns data from weather object formatted."""
-        formatted_results = "=" * self._LINE_LEN + "\n"
-        formatted_results += self._APP_TITLE + "\n\n"
+        formatted_results = "=" * self._LINE_LEN + f"{os.linesep}"
+        formatted_results += self._APP_TITLE + f"{os.linesep}" * 2
 
-        formatted_results += f"Current weather in {self.weather.city}:\n"
-        formatted_results += f"\tWeather type: {self.weather.weather_type}\n"
-        formatted_results += f"\tTemperature: {self.weather.temperature}\n"
-        formatted_results += f"\tFeels like: {self.weather.feels_like}\n"
-        formatted_results += f"\tHumidity: {self.weather.humidity}\n"
+        formatted_results += f"Current weather in {self.weather.city}:{os.linesep}"
+        formatted_results += f"\tWeather type: {self.weather.weather_type}{os.linesep}"
+        formatted_results += f"\tTemperature: {self.weather.temperature}{os.linesep}"
+        formatted_results += f"\tFeels like: {self.weather.feels_like}{os.linesep}"
+        formatted_results += f"\tHumidity: {self.weather.humidity}{os.linesep}"
         formatted_results += "=" * self._LINE_LEN
 
         return formatted_results
