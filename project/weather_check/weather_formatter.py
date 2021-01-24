@@ -5,7 +5,7 @@ from .weather import Weather
 
 class WeatherFormatter:
     _LINE_LEN = 45
-    _APP_TITLE = "WEATHER CHECK ☀"
+    _APP_TITLE = "WEATHER CHECK"
 
     def __init__(self, weather: Weather):
         self.weather = weather
