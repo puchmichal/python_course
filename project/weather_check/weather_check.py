@@ -6,7 +6,7 @@ from .weather_check_app import WeatherCheckApp
 def main(args=None):
     # parse arguments
     parser = argparse.ArgumentParser(
-        prog="weather_check",
+        prog="weather-check",
         description="CLI OpenWeather API clinet.",
         formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
