@@ -31,7 +31,7 @@ class RequestHandler:
             dict, json response
         """
         response = self._send_request().json()
-        if response["code"] != "200":
+        if response["cod"] != 200:
             raise ValueError("Incorrect city or country.")
         return response
 
